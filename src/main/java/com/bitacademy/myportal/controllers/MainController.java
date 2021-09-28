@@ -6,10 +6,10 @@ import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class MainController {
-		@RequestMapping({"/", "/main"})
-		public ModelAndView home() {
-				ModelAndView mav = new ModelAndView();
-				mav.addObject("/WEB-INF/views/home.jsp");
-				return mav;
-		}
+	@RequestMapping({"/", "/main"})
+	public ModelAndView home() {
+			ModelAndView mav = new ModelAndView();
+			mav.setViewName("/WEB-INF/views/home.jsp");
+			return mav;
+	}
 }
